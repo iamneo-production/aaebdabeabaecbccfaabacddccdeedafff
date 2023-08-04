@@ -38,7 +38,7 @@ public class MainController extends HttpServlet {
         System.out.println(result);
         if(calculate!=null) {
 //        	MainContro
-//        	out.println("<h3>Based on the name similarity, the friendship strength between "+myName+" and "+friendName+" is: "+result+"</h3>");
+//        	System.out.println("<h3>Based on the name similarity, the friendship strength between "+myName+" and "+friendName+" is: "+result+"</h3>");
          	request.setAttribute("myName", myName);
         	request.setAttribute("friendName", friendName);
         	request.setAttribute("result", result);
