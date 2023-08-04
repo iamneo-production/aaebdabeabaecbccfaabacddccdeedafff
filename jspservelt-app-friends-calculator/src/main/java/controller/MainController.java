@@ -37,7 +37,7 @@ public class MainController extends HttpServlet {
         
         System.out.println(result);
         if(calculate!=null) {
-//        	PrintWriter out = response.getWriter();
+//        	MainContro
 //        	out.println("<h3>Based on the name similarity, the friendship strength between "+myName+" and "+friendName+" is: "+result+"</h3>");
          	request.setAttribute("myName", myName);
         	request.setAttribute("friendName", friendName);
@@ -58,7 +58,7 @@ public int calculate(String name1, String name2) {
 		count += countOccurrences(combined, "FRIENDS".charAt(i));
 	}
 	int total = name1.length() + name2.length();
-	int percentage = count * 100 / total;
+	int percentage = (count * 100) / total;
 	return percentage;
 }
 
